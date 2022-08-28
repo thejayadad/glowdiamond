@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            background: black;
+        }
+        #diamond {  
+   padding: 3%;  
+   color: white;  
+   font-size: 10em;  
+   border-radius: 10%;   
+   animation: glow 2s linear infinite;  
+ }  
+ @keyframes glow {  
+   from {  
+     text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px orangered, 0 0 40px orangered, 0 0 50px orangered, 0 0 60px orangered, 0 0 70px orangered;  
+   }  
+   to {  
+     text-shadow: 0 0 5px lightskyblue,   
+     0 0 25px lightskyblue,  
+     0 0 50px lightskyblue,  
+     0 0 100px #01d9fa;  
+   }  
+ } 
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <i class="fa fa-diamond" id="diamond"></i>  
+        </div>  
+</body>
+</html>
